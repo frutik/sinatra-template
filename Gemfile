@@ -8,6 +8,8 @@ gem 'mysql2'
 gem 'sass'
 gem 'rake'
 
-group :development, :test do
+group :development do
   gem 'rspec', '~> 2.8'
+  gem 'factory_girl'
+  gem "faker"
 end

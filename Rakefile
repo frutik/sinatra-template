@@ -90,10 +90,7 @@ namespace :db do
     open(File.join(migrations_dir, filename), 'w') do |f|
       f << (<<-EOS).gsub("      ", "")
       class #{migration_name} < ActiveRecord::Migration
-        def self.up
-        end
-
-        def self.down
+        def change
         end
       end
       EOS

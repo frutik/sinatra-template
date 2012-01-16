@@ -1,12 +1,7 @@
-module Foobar
-  class Bar < Foobar::Base
-    configure do
-      set :views, "./app/views/bar"
-    end
-    
-    get '/' do
-      erb :"index"
-    end
+class Foobar::Bar < Foobar::Base
 
+  get '/' do
+    erb :"bar/index"
   end
+
 end
